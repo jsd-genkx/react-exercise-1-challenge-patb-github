@@ -3,7 +3,8 @@
 // 2. Pass in props (short for properties), similar to passing arguments to a JavaScript function. Both providing inputs to a piece of code.
 // 3. Define prop types
 
-import React from 'react'
+import React from 'react';
+import PropTypes from "prop-types";
 
 const FunctionalComponent = (props) => {
   return (
@@ -12,6 +13,10 @@ const FunctionalComponent = (props) => {
       <p>This React component is made by a function expression; we call it a functional component!</p>
     </>
   );
+}
+
+FunctionalComponent.propTypes = {
+  value: PropTypes.string
 }
 
 export default FunctionalComponent;

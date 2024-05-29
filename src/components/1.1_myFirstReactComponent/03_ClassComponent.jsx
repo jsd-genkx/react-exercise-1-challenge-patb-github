@@ -3,7 +3,8 @@
 // 2. Pass in props (short for properties), similar to passing arguments to a JavaScript function. Both providing inputs to a piece of code.
 // 3. Define prop types
 
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from "prop-types";
 
 export default class ClassComponent extends Component {
   render(props) {
@@ -14,4 +15,8 @@ export default class ClassComponent extends Component {
       </>
     )
   }
+}
+
+ClassComponent.propTypes = {
+  value: PropTypes.string
 }

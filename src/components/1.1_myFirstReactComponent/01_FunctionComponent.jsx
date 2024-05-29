@@ -4,6 +4,7 @@
 // 3. Define prop types
 
 import React from 'react';
+import PropTypes from "prop-types";
 
 function FunctionComponent(props) {
   return (
@@ -12,6 +13,10 @@ function FunctionComponent(props) {
       <p>This React component is made by a function declaration; we call it a function component!</p>
     </>
   )
+}
+
+FunctionComponent.propTypes = {
+  value: PropTypes.string
 }
 
 export default FunctionComponent;
